@@ -1,0 +1,22 @@
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 0 10px;
+}
+
+h1 { text-align: center; color: #0e2433; }
+
+.add-form { display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px; }
+.add-form input { padding: 8px; border-radius: 4px; border: 1px solid #ccc; }
+.add-form button { padding: 8px; border: none; background: #45b6fe; color: white; border-radius: 4px; cursor: pointer; }
+
+.todo-item { display: flex; align-items: center; gap: 10px; padding: 10px; border-bottom: 1px solid #eee; cursor: pointer; }
+.todo-item.completed h3, .todo-item.completed p { text-decoration: line-through; color: gray; }
+.todo-item button { margin-left: auto; padding: 4px 8px; background: red; color: white; border: none; border-radius: 4px; cursor: pointer; }
+
+.error { color: red; text-align: center; margin-bottom: 10px; }
+
+@media (max-width: 500px) {
+  .add-form input, .add-form button { width: 100%; }
+  .modal { width: 90%; }
+}
